@@ -1,9 +1,10 @@
-# tagging_tool_js
-Lightweight tool for sentence tagging (i.e. NER markup) on JavaScript
+# Tagging tool (QA) for toloka.yandex.ru on js
+Lightweight tool for sentence tagging (i.e. QA markup) on JavaScript
+
 
 In Toloka you must create 2 input variables:
-* input: string - space separated words to show
-* stress: string - space separated floats of word sizes in em
+* context: string - space separated words to show
+* question: array_string - array of question for QA
 
 and 1 output variable:
-* output: [[int]] - arrays of taggs represented as tuple [first_word, last_word] 
+* output: [int] - arrays of taggs represented as tuple [first_word, last_word] 
