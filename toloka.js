@@ -2,7 +2,7 @@ exports.Task = extend(TolokaHandlebarsTask, function (options) {
     TolokaHandlebarsTask.call(this, options);
 }, {onRender: function() {
 
-    var input = this.getTask().input_values.input;
+    var input = this.getTask().input_values.context;
     var words = input.split(' ');
     var stress = "";
 

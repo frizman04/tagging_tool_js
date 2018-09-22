@@ -8,3 +8,25 @@ In Toloka you must create 2 input variables:
 
 and 1 output variable:
 * output: [int] - arrays of taggs represented as tuple [first_word, last_word] 
+
+Toloka settings of input :
+{
+  "context": {
+    "type": "string",
+    "hidden": false,
+    "required": true
+  },
+  "question": {
+    "type": "array_string",
+    "hidden": false,
+    "required": true
+  }
+}
+
+Toloka settings of output :
+{
+  "output": {
+    "type": "array_integer",
+    "required": true
+  }
+}
