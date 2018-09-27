@@ -26,7 +26,7 @@ Toloka settings of input :
 Toloka settings of output :
 {
   "output": {
-    "type": "array_integer",
+    "type": "array_json",
     "required": true
   }
 }

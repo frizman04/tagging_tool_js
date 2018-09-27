@@ -142,10 +142,12 @@ function redraw(root, selections, words, stress) {
                     case "invalid":
                         break;
                     case "valid":
-                        selections.push([left, right]);
-                        selections.sort(function (s1, s2) {
-                            return s1[0] - s2[0];
-                        });
+                        if (selections.length == 0) { ////В QA ответ может содержать только слова идущие подряд
+                            selections.push([left, right]);
+                            selections.sort(function (s1, s2) {
+                                return s1[0] - s2[0];
+                            });
+                        }
                         break;
                     case "inside":
                         selections = selections.filter(function (sel) {

@@ -3,6 +3,10 @@
   text-align: justify;
 };
 
+.task{
+  display: block;
+}
+
 
 mark {
   background-color: DarkOrange;
